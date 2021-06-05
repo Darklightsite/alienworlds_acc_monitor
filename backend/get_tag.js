@@ -12,6 +12,13 @@ const base_api = [
     'https://wax.eosn.io',
     'https://api.wax.alohaeos.com',
     'https://wax.greymass.com',
+'https://wax-bp.wizardsguild.one',
+    'https://apiwax.3dkrender.com',
+    'https://wax.eu.eosamsterdam.net',
+    'https://wax.csx.io',
+    'https://wax.eoseoul.io',
+    'https://wax.eosphere.io',
+    'https://api.waxeastern.cn'
 ]
 
 function getRandom(min, max) {
