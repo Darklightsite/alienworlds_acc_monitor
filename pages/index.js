@@ -106,7 +106,7 @@ export default function Home(props) {
     let lastTLMPrice = 0
     let lastWaxPrice = 0
     const now = DateTime.now().setZone("local")
-    const nextUpdate = TLMPrice.update != "None" ? DateTime.fromRFC2822(TLMPrice.update).plus({ seconds: 30}) : now
+    const nextUpdate = TLMPrice.update != "None" ? DateTime.fromRFC2822(TLMPrice.update).plus({ seconds: 10}) : now
     if (nextUpdate <= now) {
       lastTLMPrice = await fetchTLMPrice()
       const newTLMPrice = {
