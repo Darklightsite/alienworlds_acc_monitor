@@ -231,7 +231,9 @@ hover:bg-blue-200 py-1 px-3 font-bold ${layout==='Table' ? 'bg-blue-500 text-whi
             })}
           </div>
         </div>
-      </>}
+      </>
+setLayout("Cards")
+}
       {layout === 'Cards' && <>
         <TotalBalanceCard totalTLM={totalTLM} totalWax={totalWax} totalStaked={totalStaked}
         TLMPrice={TLMPrice} WAXPrice={WAXPrice} />
@@ -288,4 +290,3 @@ export async function getServerSideProps(context) {
     props: {}, // will be passed to the page component as props
   }
 }
-setLayout("Cards")
